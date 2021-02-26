@@ -24,4 +24,4 @@ $devices = (get-msoldevice -all).Count
 Write-Host "            $devices dispositivos" `n 
 
 #Soma dos objetos
-Write-Host Totalizando ($users + $groups + $devices) objetos `n -ForegroundColor Yellow -NoNewline
+Write-Host Totalizando ($users + $groups + $devices) objetos `n -ForegroundColor Yellow -NoNewline `n
