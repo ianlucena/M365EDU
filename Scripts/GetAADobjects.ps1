@@ -11,15 +11,15 @@ Write-Host "" [(Get-AzureADTenantDetail | Select-Object -Expand VerifiedDomains 
 Write-Host " possui:" -ForegroundColor White -NoNewline; Write-Host `n 
 
 
-#Contagem de usuário
+#Contagem dos usuários
 $users = (get-msoluser).Count
 Write-Host "            $users usuários" `n
 
-#Contagem de grupos
+#Contagem dos grupos
 $groups = (get-msolgroup).Count
 Write-Host "            $groups grupos" `n
 
-#Contagem de dispositivos 
+#Contagem dos dispositivos 
 $devices = (get-msoldevice -all).Count
 Write-Host "            $devices dispositivos" `n 
 
